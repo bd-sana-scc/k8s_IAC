@@ -1,0 +1,28 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hunger-check-deployment2
+  namespace: big-monolith
+spec:
+  selector:
+    matchLabels:
+      app: hunger-check
+  template:
+    metadata:
+      labels:
+        app: hunger-check
+    spec:
+      serviceAccountName: big-monolith-sa
+      containers:
+      - name: hunger-check
+        image: madhuakula/k8s-goat-hunger-check
+        # resources:
+        #   limits:
+        #     memory: "1000Gi"
+        #   requests:
+        #     memory: "1000Gi"
+        # command: ["stress-ng"]
+        # args: ["--vm", "1", "--vm-bytes", "500M", "--vm-hang", "1", "-v"]
+        ports:
+        - containerPort: 8080
