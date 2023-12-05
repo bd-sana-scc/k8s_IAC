@@ -4,6 +4,6 @@ Helm
 ReplicaSet - Done
 PSS/PSP 
 DaemonSet - Done
-Network Policy - Done
-Service 
-Cluster Policy
+Network Policy --> UPDATE
+Service --> UPDATE
+Cluster Policy -- ??
