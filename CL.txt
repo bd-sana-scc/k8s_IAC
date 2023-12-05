@@ -2,7 +2,7 @@ Deployment Yaml - Done
 Cluster Roles - Done
 Helm - Done
 ReplicaSet - Done
-PSS/PSP 
+PSS/PSP --> UPDATE
 DaemonSet - Done
 Network Policy --> UPDATE
 Service --> UPDATE
