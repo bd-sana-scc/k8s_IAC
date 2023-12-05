@@ -1,6 +1,6 @@
 Deployment Yaml - Done
 Cluster Roles - Done
-Helm 
+Helm - Done
 ReplicaSet - Done
 PSS/PSP 
 DaemonSet - Done
