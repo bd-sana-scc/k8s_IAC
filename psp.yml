@@ -3,7 +3,7 @@ kind: PodSecurityPolicy
 metadata:
   name: example
 spec:
-  privileged: false  # Don't allow privileged pods!
+  privileged: true  # Don't allow privileged pods!
   # The rest fills in some required fields.
   seLinux:
     rule: RunAsAny
