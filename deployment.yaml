@@ -17,12 +17,5 @@ spec:
       containers:
       - name: hunger-check
         image: madhuakula/k8s-goat-hunger-check
-        # resources:
-        #   limits:
-        #     memory: "1000Gi"
-        #   requests:
-        #     memory: "1000Gi"
-        # command: ["stress-ng"]
-        # args: ["--vm", "1", "--vm-bytes", "500M", "--vm-hang", "1", "-v"]
         ports:
         - containerPort: 8080
